@@ -36,7 +36,7 @@ The dataset used in this project consists of images of healthy and diseased plan
 
 - *Training Data*: Organized in directories based on disease classes.
 - *Labels*: Stored in plant_disease_data, which maps class indices to labels.
-- *Test Data*: Placed in the data/test directory for evaluation purposes.
+- *Test Data*: Placed in the data/test_images directory for evaluation purposes.
 
 The dataset can be expanded to include additional plant species and diseases.
 
@@ -48,10 +48,9 @@ Follow these steps to set up and run the project on your local machine:
 
 Make sure you have the following installed:
 
-- *Python 3.10*
+- *Python 3.11*
 - *pip* (Python package installer)
 - *TensorFlow* (for deep learning)
-- *OpenCV* (for image processing)
 - *Streamlit* (for the web interface)
 
 ### Steps
@@ -59,8 +58,7 @@ Make sure you have the following installed:
 1. *Clone the Repository:*
    
    bash
-   git clone https://github.com/gowtham611/plant_disease.git
-   cd plant_disease
+   https://github.com/817099/Plant-disease-detection/edit/main/README.md
    
 
 2. *Install Dependencies:*
@@ -82,7 +80,6 @@ python app.py
 The Streamlit app provides the following features:
 
 - *Homepage*: Introduction to the project and instructions for users.
-- *Real-Time Detection*: Identifies plant diseases using a webcam.
 - *Image Upload*: Users can upload images of plant leaves for disease classification.
 - *Disease Information*: Provides details on detected diseases and possible treatments.
 
@@ -91,7 +88,6 @@ The Streamlit app provides the following features:
 The model follows a CNN-based approach for classification:
 
 - *Convolutional Neural Network (CNN)*: Used for image-based disease detection.
-- *Transfer Learning*: Pre-trained models like VGG16, ResNet, etc., can be used for better accuracy (though this model was trained from scratch).
 - *Pooling Layers*: Reduce spatial dimensions.
 - *Fully Connected Layers*: Perform final classification.
 - *Convolutional Layers*: Extract features from images.
